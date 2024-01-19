@@ -45,3 +45,53 @@ jQuery(document).ready(function($){
 		}
 	});
 });
+
+//Own 
+let currentIndex = 0;
+  const images = document.querySelectorAll('.carousel-image');
+  const description = document.getElementById('carousel-description');
+  const expandView = document.getElementById('expand-view');
+  const expandedImage = document.getElementById('expanded-image');
+
+  function updateCarousel() {
+    const newTransformValue = -currentIndex * 100 + '%';
+    document.getElementById('image-carousel').style.transform = 'translateX(' + newTransformValue + ')';
+    updateDescription();
+  }
+
+  function updateDescription() {
+    description.textContent = 'Description for Image ' + (currentIndex + 1);
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateCarousel();
+  }
+
+  function openExpandView() {
+    const currentImageSrc = images[currentIndex].src;
+    expandedImage.src = currentImageSrc;
+    expandView.style.display = 'flex';
+  }
+
+  function closeExpandView() {
+    expandView.style.display = 'none';
+  }
+
+  // Set click event for each image
+  images.forEach((image, index) => {
+    image.onclick = (event) => {
+      event.stopPropagation(); // Prevents the click from propagating to the document
+      currentIndex = index;
+      openExpandView();
+    };
+  });
+
+  setInterval(nextSlide, 30000); // Auto-advance every 30 seconds
+
+  updateCarousel(); // Initial update
