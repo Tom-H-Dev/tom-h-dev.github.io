@@ -53,6 +53,12 @@ let currentIndex = 0;
   const expandView = document.getElementById('expand-view');
   const expandedImage = document.getElementById('expanded-image');
 
+  // Descriptions for each image
+  const imageDescriptions = [
+    'Djdhigihghdfgdfsg',
+    'Description for Image 2',
+  ];
+
   function updateCarousel() {
     const newTransformValue = -currentIndex * 100 + '%';
     document.getElementById('image-carousel').style.transform = 'translateX(' + newTransformValue + ')';
@@ -60,7 +66,7 @@ let currentIndex = 0;
   }
 
   function updateDescription() {
-    description.textContent = 'Description for Image ' + (currentIndex + 1);
+    description.textContent = imageDescriptions[currentIndex];
   }
 
   function nextSlide() {
