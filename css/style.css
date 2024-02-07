@@ -1241,3 +1241,32 @@ textarea:focus {
     color: #fff;
     font-size: 20px;
   }
+
+  .github-icon-class img {
+    width: 50%;
+    height: auto;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.img-image {
+    flex: 0 0 auto; /* Adjust the width of the image as needed */
+    margin-right: 20px; /* Adjust the spacing between image and text */
+}
+.img-text {
+    flex: 1 1 auto; /* Adjust the width of the text as needed */
+}
+@media only screen and (max-width: 600px) {
+    .img-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-image, .img-text {
+        /*flex: 1 1 auto;*/
+        margin-right: 0;
+    }
+}
