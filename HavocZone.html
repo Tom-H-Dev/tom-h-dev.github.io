@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Box personal portfolio Template</title>
+    <title>Tom Holewijn | Havoc Zone</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -79,48 +79,45 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1>Conway's Game Of Life</h1>
-        <p><a href="#">Home</a> / <a href="#">portfolio</a> / Conway's Game Of Life</p>
+        <h1>Havoc Zone</h1>
+        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Havoc Zone</p>
     </div>
     <!-- end top-bar -->
     
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-12">
-            <video src="/videos/GameOfLife/Game Of Life Video.mp4" autoplay muted class="img-responsive" ></video>
+            <img src="/img/HavocZone/HavocZoneLogo.png" alt="" class="img-responsive">
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">Conway's Game Of Life</h3>
+            <h3 class="text-uppercase">Havoc Zone</h3>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-9">
             <p>
 
-                "The Game of Life  (sometimes known simply as Life) is an example of a cellular automaton and a zero-player game. It takes place on an infinite two-dimensional grid in which cells can be ‘on’ (alive) or ‘off’ (dead), and is defined by a set of rules that jointly determine the state of a cell given the state of its neighbours."
-                <a href="http://www.scholarpedia.org/article/Game_of_Life" target="_blank">http://www.scholarpedia.org/article/Game_of_Life</a>
+                Hovoc Zone is a personal project where you play against other players in a free for all shooter. You play agains each other in a single arena via steam multiplayer servers.
             </p>
 
             <p><br>
-                The idea was to remake the simulation made by Dr. John H Conway in a weeks time.
-                With that we got a explanation on how to simulation works and some mathematics aroudn it.
-                I made an efficcient version that runs smoothly via unity and works exactly as the original.
+                The idea for the project is that I wanted to make a game where you play multiplayer agains each other in a multiplayer shooter. When I started I wanted to work with the Steam multiplayer servers to make a multiplayer game using steam.
             </p><br>
 
             <div class="img-container">
                 <div class="img-image">
-                    <img src="/img/Conways game of life/gol_snippet_01.PNG" alt="img-Image">
+                    <img src="/img/HavocZone/snippet01.png" alt="img-Image">
                 </div>
                 <div class="img-text">
-                    <p><br>This piece of code check the amout of neighbors the specific cell has and how many of those are alive. First it checks all the possible positions with the 2 arrays called "_optionArrayX" and "_optionArrayY". For al lthe possible combinations the cell will check if the neighboring cells are alive or dead and execute the corresponding actions.</p>
+                    <p><br>This is a part of a larger script to add and update all the information of the players in the lobby. All the correct data gets set to the players own information like the playername, playerid, steamid, profile picture and if the player is ready to play. This information is required to see if the player has indeed installed the game and so you can display specific stats at the end or during a game. All this information gets saved in the player until this player has left the game.</p>
                 </div>
             </div><br><br>
 
             <div class="img-container">
                 <div class="img-image">
-                    <img src="/img/Conways game of life/gol_snippet_02.PNG" alt="img-Image">
+                    <img src="/img/HavocZone/snippet02.png" alt="img-Image">
                 </div>
                 <div class="img-text">
                     <p><br>This function will set for the total width and height of the gid where you are simulating all the cells on or off. This will edit the sprite editor to change the visual of the cells to show what cells are alive or dead. If the cells are alive or not is remembered by the "_activeCells" array and set into the "_cellGrid" array to show which cells visuals are being changed.</p>
@@ -139,15 +136,15 @@
         <div class="col-md-3">
             <div class="h-10"></div>
             <h4>Download/View project</h4>
-            <a href="https://github.com/Tom-H-Dev/Unity-Conways-Game-of-Life" target="_blank" class="github-icon-class">
+            <a href="https://github.com/Tom-H-Dev/Havoc-Zone" target="_blank" class="github-icon-class">
                 <img src="/img/github-mark.png">
             </a> 
             
             <h4>Share</h4>
             <ul class="social-ul">
-                <li class="box-social"><a href="https://www.facebook.com/sharer/sharer.php?u=tom-h-dev.github.io/BoxFolio/GameOfLife.html&quote=Check out this Game Of Life project made by Tom Holewijn!%0A%0A" target="_blank"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="https://www.linkedin.com/sharing/share-offsite/?url=tom-h-dev.github.io/BoxFolio/GameOfLife.html&title=Check out this Game Of Life project made by Tom Holewijn!%3Cbr%3E" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-                <li class="box-social"><a href="https://twitter.com/intent/tweet?url=tom-h-dev.github.io/BoxFolio/GameOfLife.html&text=Check out this Game Of Life project made by Tom Holewijn!%0A%0A" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                <li class="box-social"><a href="https://www.facebook.com/sharer/sharer.php?u=tom-h-dev.github.io/BoxFolio/HavocZone.html&quote=Check out this game Havoc Zone made by Tom Holewijn!%0A%0A" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/sharing/share-offsite/?url=tom-h-dev.github.io/BoxFolio/HavocZone.html&title=Check out this game Havoc Zone made by Tom Holewijn!%3Cbr%3E" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                <li class="box-social"><a href="https://twitter.com/intent/tweet?url=tom-h-dev.github.io/BoxFolio/HavocZone.html&text=Check out this game Havoc Zone made by Tom Holewijn!%0A%0A" target="_blank"><i class="ion-social-twitter"></i></a></li>
             </ul>
         </div>
     </div>
