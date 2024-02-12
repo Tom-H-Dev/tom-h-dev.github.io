@@ -1256,6 +1256,7 @@ textarea:focus {
 .img-image {
     flex: 0 0 auto; /* Adjust the width of the image as needed */
     margin-right: 20px; /* Adjust the spacing between image and text */
+    /*max-width: fit-content;*/
 }
 .img-text {
     flex: 1 1 auto; /* Adjust the width of the text as needed */
@@ -1268,5 +1269,24 @@ textarea:focus {
     .img-image, .img-text {
         /*flex: 1 1 auto;*/
         margin-right: 0;
+    }
+}
+
+
+.sidebyside-image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+}
+
+.sidebyside-image {
+    width: 50%; /* Each image takes 50% width */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 5px; /* Add some space between images */
+}
+
+/* Adjust image size for smaller screens */
+@media (max-width: 768px) {
+    .sidebyside-image {
+        width: 100%; /* Each image takes 100% width on smaller screens */
     }
 }

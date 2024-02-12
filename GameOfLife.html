@@ -70,8 +70,8 @@
 
                 <li class="box-label">Follow me</li>
 
-                <li class="box-social"><a href="#0"><i class="ion-social-linkedin"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-github"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/in/tom-holewijn-a4b267242/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                <li class="box-social"><a href="https://github.com/tom-h-dev" target="_blank"><i class="ion-social-github"></i></a></li>
             </ul>
         </nav>
         <!-- end nav -->
@@ -108,37 +108,26 @@
                 With that we got a explanation on how to simulation works and some mathematics aroudn it.
                 I made an efficcient version that runs smoothly via unity and works exactly as the original.
             </p><br>
-              
-            <div id="expand-view" onclick="closeExpandView()">
-                <span id="close-btn">✕</span>
-                <img id="expanded-image" src="" alt="Expanded Image">
-            </div>
 
-            <!--<div id="carousel-container">
-                <div id="image-carousel">
-                    <img class="carousel-image" src="/img/Conways game of life/gol_snippet_01.PNG" alt="Image 1">
-                    <img class="carousel-image" src="/img/Conways game of life/gol_snippet_02.PNG" alt="Image 2">
-                </div>
-                <p id="carousel-description">Description for Image 1</p>
-              
-                <div class="carousel-controls">
-                  <span class="control-arrow" onclick="prevSlide()">❮</span>
-                  <span class="control-arrow" onclick="nextSlide()">❯</span>
-                </div>
-            </div>-->
             <div class="img-container">
                 <div class="img-image">
                     <img src="/img/Conways game of life/gol_snippet_01.PNG" alt="img-Image">
                 </div>
                 <div class="img-text">
-                    <p>Your text goes here. This text will appear next to the image on larger screens and will move underneath the image on smaller screens.</p>
+                    <p><br>This piece of code check the amout of neighbors the specific cell has and how many of those are alive. First it checks all the possible positions with the 2 arrays called "_optionArrayX" and "_optionArrayY". For al lthe possible combinations the cell will check if the neighboring cells are alive or dead and execute the corresponding actions.</p>
                 </div>
-            </div>
-              
-            <div id="expand-view" onclick="closeExpandView()">
-                <span id="close-btn">✕</span>
-                <img id="expanded-image" src="" alt="Expanded Image">
-            </div>
+            </div><br><br>
+
+            <div class="img-container">
+                <div class="img-image">
+                    <img src="/img/Conways game of life/gol_snippet_02.PNG" alt="img-Image">
+                </div>
+                <div class="img-text">
+                    <p><br>This function will set for the total width and height of the gid where you are simulating all the cells on or off. This will edit the sprite editor to change the visual of the cells to show what cells are alive or dead. If the cells are alive or not is remembered by the "_activeCells" array and set into the "_cellGrid" array to show which cells visuals are being changed.</p>
+                </div>
+            </div><br>
+
+            <p><b>If you enjoyed this read or have questions feel free to contact me!</b></p>
             
         </div>
 
@@ -148,13 +137,6 @@
           
 
         <div class="col-md-3">
-            <!--<p> <b>My Contribution:</b></p>
-            <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Design</li>
-                <li><i class="ion-ios-circle-filled"></i> consectetur adipiscing</li>
-                <li><i class="ion-ios-circle-filled"></i> et gubernationis</li>
-                <li><i class="ion-ios-circle-filled"></i> Aliter enim nosmet</li>
-            </ul>-->
             <div class="h-10"></div>
             <h4>Download/View project</h4>
             <a href="https://github.com/Tom-H-Dev/Unity-Conways-Game-of-Life" target="_blank" class="github-icon-class">
@@ -163,10 +145,9 @@
             
             <h4>Share</h4>
             <ul class="social-ul">
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+                <li class="box-social"><a href="https://www.facebook.com/sharer/sharer.php?u=tom-h-dev.github.io/BoxFolio/GameOfLife.html&quote=Check out this Game Of Life project made by Tom Holewijn!%0A%0A" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/sharing/share-offsite/?url=tom-h-dev.github.io/BoxFolio/GameOfLife.html&title=Check out this Game Of Life project made by Tom Holewijn!%3Cbr%3E" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                <li class="box-social"><a href="https://twitter.com/intent/tweet?url=tom-h-dev.github.io/BoxFolio/GameOfLife.html&text=Check out this Game Of Life project made by Tom Holewijn!%0A%0A" target="_blank"><i class="ion-social-twitter"></i></a></li>
             </ul>
         </div>
     </div>
