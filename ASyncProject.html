@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tom Holewijn | Hot Lead</title>
+    <title>Tom Holewijn | ASync Multiplayer Project</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -63,8 +63,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About me</a></li>
                 <li><a href="services.html">Skills</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact Me</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="portfolio.html">Portfolio</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="contact.html">Contact Me</a></li>
 
 
 
@@ -79,56 +79,47 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1>Hot Lead</h1>
-        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Hot Lead</p>
+        <h1>ASync Multiplayer Project</h1>
+        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / ASync Multiplayer Project</p>
     </div>
     <!-- end top-bar -->
     
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-12">
-            <video src="/videos/HotLead/Trailer(1) (1).mp4" autoplay muted class="img-responsive" ></video>
+            <video src="/videos/ASync/ASYNCvideo.mp4" autoplay muted class="img-responsive" ></video>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">Hot Lead</h3>
+            <h3 class="text-uppercase">ASync Multiplayer Project</h3>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-9">
             <p>
-                You play as “Sargent Lead”, a special agent tasked to check out a factory that was taken over by a hostile AI. You have to clear the floors from hostile robots and find out what is happening in the factory. For this project we had to make a top down view twinstick shooter. As a group we could choose the look and feel of the game. We had the idea to make something in the style of a stealth shooter.
+                I chose for a course at school where I would learn how to make servers and databases and how to connect them to Unity so we could use them in our games. The final result I got was a asynchronized multiplayer game where you could make an account and battle other players! You can make an account, generate resources, build an army, battle other players in this simple yet complex game.
             </p>
 
-            <!--<div class="sidebyside-image-container">
-                <div class="sidebyside-image">
-                    <img src="/img/HotLead/hot_lead_2.png" alt="Image 1">
-                </div>
-                <div class="sidebyside-image">
-                    <img src="/img/HotLead/image (3).png" alt="Image 2">
-                </div>
-            </div>-->
-
             <p><br>
-                The game was the final project of the first year of the study at Grafisch Lyceum Utrecht. We had to make a twinstick top down shooter in 6 weeks time. We had the idea that the main character had to find out why the ai that owns the company has gone rouge and try to fix it.
+                For this project we learned how to use php and json to transfer data from the live game to the server and then to a sql database on the server. We wrote our own php server code so send the data to the database and send some data back to unity from the database to prevent cheating from the player side. It may not be super efficient yet it does work and for my first time using this is is really nice.
             </p><br>
 
             <div class="img-container">
                 <div class="img-image">
-                    <img src="/img/HotLead/hotleadsnippet01.PNG" alt="img-Image">
+                    <img src="/img/async/snipet 1 check token.png" alt="img-Image">
                 </div>
                 <div class="img-text">
-                    <p><br>The "FindVisableTargets()" function is in charge of the enemy system where the emey searches for any players in thier area. If the enemy found a player the player is the target when it is still in distance. When there is no player found the enemy will follow its path or walk back to its path when the player is longer in sight.</p>
+                    <p><br>Every functionon the php side gets started with this functionality that will check if the token is correct that the player has. The player has made a token the moment that you log in and when you log out the token gets deleted. Without the token you cannot do anything and it works against hacker that try and hack the game.</p>
                 </div>
             </div><br><br>
 
             <div class="img-container">
                 <div class="img-image">
-                    <img src="/img/HotLead/hotleadsnippet02.PNG" alt="img-Image">
+                    <img src="/img/async/snippet2 api call.png" alt="img-Image">
                 </div>
                 <div class="img-text">
-                    <p><br>This is a part of the cycle for the enemies to see if they are are following the waytpoints they got assigned or if they are attacking the player. When the player is set as the target the enemy will follow the player for a set distance from the player when the player is outside this area the enemy will walk back to the path.
+                    <p><br>This is the api call that alls the server and gives some data and retrieve some data from the server. In this case you gain resources every couple of seconds so at the top you pass some data like the token and last tick. At the bottom you recieve some data like the gold, lumber and mana.
                     </p>
                 </div>
             </div><br>
@@ -146,28 +137,17 @@
 
             <!--<img src="/img/HotLead/hot_lead_2.png">-->
             
-            <p><br> <b>My Contribution:</b></p>
+            <p><br> <b>Made with:</b></p>
             <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Enemy vision.</li>
-                <li><i class="ion-ios-circle-filled"></i> Enemy behavior.</li>
-                <li><i class="ion-ios-circle-filled"></i> Shooting systems.</li>
-                <li><i class="ion-ios-circle-filled"></i> Gameplay manager.</li>
-                <li><i class="ion-ios-circle-filled"></i> Cheat manager.</li>
-            </ul>
-
-            <p> <b>My Teammates:</b></p>
-            <ul class="cat-ul">
-                <p><b>Developers:</b></p>
-                <li><i class="ion-ios-circle-filled"></i> Loek Ota</li>
-                <p><b>Artist:</b></p>
-                <li><i class="ion-ios-circle-filled"></i> Henrico Kralt</li>
-                <li><i class="ion-ios-circle-filled"></i> Thijmen Zwanenveld</li>
-                <li><i class="ion-ios-circle-filled"></i> Lisa Rengelo</li>
+                <li><i class="ion-ios-circle-filled"></i> Devserver 17.</li>
+                <li><i class="ion-ios-circle-filled"></i> Unity.</li>
+                <li><i class="ion-ios-circle-filled"></i> PHP.</li>
+                <li><i class="ion-ios-circle-filled"></i> PhpMyAdmin.</li>
             </ul>
 
             <div class="h-10"></div>
             <h4>Download/View project</h4>
-            <a href="https://github.com/Tom-H-Dev/Hot-Lead" target="_blank" class="github-icon-class">
+            <a href="https://github.com/Tom-H-Dev/asynchproject" target="_blank" class="github-icon-class">
                 <img src="/img/github-mark.png">
             </a> 
             

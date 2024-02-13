@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tom Holewijn | Hot Lead</title>
+    <title>Tom Holewijn | De Race Voor Pakjesavond</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -63,8 +63,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About me</a></li>
                 <li><a href="services.html">Skills</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact Me</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="portfolio.html">Portfolio</a><i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="contact.html">Contact Me</a> </li>
 
 
 
@@ -79,8 +79,8 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1>Hot Lead</h1>
-        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Hot Lead</p>
+        <h1>De Race Voor Pakjesavond</h1>
+        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / De Race Voor Pakjesavond</p>
     </div>
     <!-- end top-bar -->
     
@@ -92,13 +92,13 @@
         </div>
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">Hot Lead</h3>
+            <h3 class="text-uppercase">De Race Voor Pakjesavond</h3>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-9">
             <p>
-                You play as “Sargent Lead”, a special agent tasked to check out a factory that was taken over by a hostile AI. You have to clear the floors from hostile robots and find out what is happening in the factory. For this project we had to make a top down view twinstick shooter. As a group we could choose the look and feel of the game. We had the idea to make something in the style of a stealth shooter.
+                De race voor pakjes avond is a racing game at night set in Amsterdam and Madrid. You race as Sinterklaas in a singleplayer or local splitscreen 1v1 through the streets of Amsterdam and Madrid. Your goal is to get the fastest lap time on a map.
             </p>
 
             <!--<div class="sidebyside-image-container">
@@ -111,7 +111,7 @@
             </div>-->
 
             <p><br>
-                The game was the final project of the first year of the study at Grafisch Lyceum Utrecht. We had to make a twinstick top down shooter in 6 weeks time. We had the idea that the main character had to find out why the ai that owns the company has gone rouge and try to fix it.
+                The project me made was a racing game set at night in 4 weeks. In addition we did have a group of 3 working on the project. Our idea came from it almost being the time of the year where Sinterklaas would be celebrated in the Netherlands so we thought it a funny idea to theme it in this holiday.
             </p><br>
 
             <div class="img-container">
@@ -119,7 +119,7 @@
                     <img src="/img/HotLead/hotleadsnippet01.PNG" alt="img-Image">
                 </div>
                 <div class="img-text">
-                    <p><br>The "FindVisableTargets()" function is in charge of the enemy system where the emey searches for any players in thier area. If the enemy found a player the player is the target when it is still in distance. When there is no player found the enemy will follow its path or walk back to its path when the player is longer in sight.</p>
+                    <p><br>In this snippet the OnMove() is the function that gets the player input from the new input and put it in a vector2. The MovePlayer() function is in charge to move the player for both players in one system.</p>
                 </div>
             </div><br><br>
 
@@ -128,12 +128,14 @@
                     <img src="/img/HotLead/hotleadsnippet02.PNG" alt="img-Image">
                 </div>
                 <div class="img-text">
-                    <p><br>This is a part of the cycle for the enemies to see if they are are following the waytpoints they got assigned or if they are attacking the player. When the player is set as the target the enemy will follow the player for a set distance from the player when the player is outside this area the enemy will walk back to the path.
+                    <p><br>This was the first time using the Unity playerprefs and I wanted to make a system so the player can change his/her controls for the player and it to be saved for a next time. I make a quite efficient system to get the input from the input field in unity and transfer it to the control of the car and save it aswell in the playerprefs so the controll was saved.
                     </p>
                 </div>
-            </div><br>
+            </div>
 
-            <p><b>If you enjoyed this read or have questions feel free to contact me!</b></p>
+            <iframe frameborder="0" src="https://itch.io/embed/1816077" width="552" height="167"><a href="https://tomhdev.itch.io/de-race-voor-pakjesavond">De race voor pakjesavond by TomHDev</a></iframe>
+
+            <p><br><b>If you enjoyed this read or have questions feel free to contact me!</b></p>
             
         </div>
 
@@ -148,26 +150,28 @@
             
             <p><br> <b>My Contribution:</b></p>
             <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Enemy vision.</li>
-                <li><i class="ion-ios-circle-filled"></i> Enemy behavior.</li>
-                <li><i class="ion-ios-circle-filled"></i> Shooting systems.</li>
-                <li><i class="ion-ios-circle-filled"></i> Gameplay manager.</li>
-                <li><i class="ion-ios-circle-filled"></i> Cheat manager.</li>
+                <li><i class="ion-ios-circle-filled"></i> Car controller.</li>
+                <li><i class="ion-ios-circle-filled"></i> Lap manager.</li>
+                <li><i class="ion-ios-circle-filled"></i> UI manager.</li>
+                <li><i class="ion-ios-circle-filled"></i> Checkpoints.</li>
+                <li><i class="ion-ios-circle-filled"></i> Input manager.</li>
+                <li><i class="ion-ios-circle-filled"></i> Change controlls.</li>
+                <li><i class="ion-ios-circle-filled"></i> All menus.</li>
+                <li><i class="ion-ios-circle-filled"></i> Game start.</li>
+                <li><i class="ion-ios-circle-filled"></i> Splitscreen multiplayer.</li>
+                <li><i class="ion-ios-circle-filled"></i> Laptime saving.</li>
             </ul>
 
             <p> <b>My Teammates:</b></p>
             <ul class="cat-ul">
-                <p><b>Developers:</b></p>
-                <li><i class="ion-ios-circle-filled"></i> Loek Ota</li>
                 <p><b>Artist:</b></p>
-                <li><i class="ion-ios-circle-filled"></i> Henrico Kralt</li>
-                <li><i class="ion-ios-circle-filled"></i> Thijmen Zwanenveld</li>
+                <li><i class="ion-ios-circle-filled"></i> Kimberley Lips</li>
                 <li><i class="ion-ios-circle-filled"></i> Lisa Rengelo</li>
             </ul>
 
             <div class="h-10"></div>
             <h4>Download/View project</h4>
-            <a href="https://github.com/Tom-H-Dev/Hot-Lead" target="_blank" class="github-icon-class">
+            <a href="https://github.com/Tom-H-Dev/De-race-voor-pakesavond" target="_blank" class="github-icon-class">
                 <img src="/img/github-mark.png">
             </a> 
             
