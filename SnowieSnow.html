@@ -63,15 +63,15 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About me</a></li>
                 <li><a href="services.html">Skills</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact Me</a> <i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="portfolio.html">Portfolio</a><i class="ion-ios-circle-filled color"></i></li>
+                <li><a href="contact.html">Contact Me</a></li>
 
 
 
                 <li class="box-label">Follow me</li>
 
-                <li class="box-social"><a href="#0"><i class="ion-social-linkedin"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-github"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/in/tom-holewijn-a4b267242/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                <li class="box-social"><a href="https://github.com/tom-h-dev" target="_blank"><i class="ion-social-github"></i></a></li>
             </ul>
         </nav>
         <!-- end nav -->
@@ -80,44 +80,89 @@
     <!-- top-bar -->
     <div class="top-bar">
         <h1>Snowie Snow</h1>
-        <p><a href="index.html">Home</a> / <a href="#">portfolio</a> / Snowie Snow</p>
+        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Snowie Snow</p>
     </div>
     <!-- end top-bar -->
     
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-12">
-            <img src="http://placehold.it/1920x1080" alt="" class="img-responsive" />
+            <video src="/videos/SnowieSnow/snowie-snow.mp4" autoplay loop muted class="img-responsive" ></video>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">Conway's Game Of Life</h3>
-            <h5>Creative & Lorem ipsum dolor sit amet</h5>
+            <h3 class="text-uppercase">Snowie Snow</h3>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-9">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus ultimum cum ultimo sapientiae Et nemo nimium beatus est </p>
+            <p>
+                Snowie Snow is a game where you and a friend race on sleds against eachother until the timer is up or when one of you crash against an obstacle on the slope. The game is a splitscreen local 1v1 game that only supports game controllers.    
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia </p>
+            <p><br>
+                The task we got was that we needed to make a local splitscreen gamme with controller support in the theme of Christmas. Next to that we were teamed up in a group of 3 programmers where we got some asset packs to use for the models in the game. In this project we learned to use the new Unity input system 1.7.0 and made it procedural generated with the use of object pools.
+            </p><br>
+
+            <div class="img-container">
+                <div class="img-image">
+                    <img src="/img/SnowieSnow/code_snippet_01.png" alt="img-Image">
+                </div>
+                <div class="img-text">
+                    <p><br>In this snippet the OnMove() is the function that gets the player input from the new input and put it in a vector2. The MovePlayer() function is in charge to move the player for both players in one system.</p>
+                </div>
+            </div><br><br>
+
+            <div class="img-container">
+                <div class="img-image">
+                    <img src="/img/SnowieSnow/code_snippet_02.png" alt="img-Image">
+                </div>
+                <div class="img-text">
+                    <p><br>In this part the two players will spawn and the countdown for the game will start and the stats to start the race are set.
+                    </p>
+                </div>
+            </div>
+            <iframe frameborder="0" src="https://itch.io/embed/1893542" width="552" height="167"><a href="https://tomhdev.itch.io/snowie-snow">Snowie Snow by TomHDev</a></iframe>
+            
+            
+            <p><br><b>If you enjoyed this read or have questions feel free to contact me!</b></p>
+            
         </div>
 
+
+
+       
+          
+        
         <div class="col-md-3">
-            <p> <b>My Contribution:</b></p>
+            
+            <p><br> <b>My Contribution:</b></p>
             <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Design</li>
-                <li><i class="ion-ios-circle-filled"></i> consectetur adipiscing</li>
-                <li><i class="ion-ios-circle-filled"></i> et gubernationis</li>
-                <li><i class="ion-ios-circle-filled"></i> Aliter enim nosmet</li>
+                <li><i class="ion-ios-circle-filled"></i> Player Movement.</li>
+                <li><i class="ion-ios-circle-filled"></i> Input manager.</li>
+                <li><i class="ion-ios-circle-filled"></i> Race start.</li>
+                <li><i class="ion-ios-circle-filled"></i> Obstacle collision.</li>
+                <li><i class="ion-ios-circle-filled"></i> Visual player indication.</li>
             </ul>
+
+            <p> <b>My Teammates:</b></p>
+            <ul class="cat-ul">
+                <a href="https://kyrilldev.github.io/" target="_blank">Kyrill Oosterveen</a><br>
+                <a href="https://chieltjee.github.io/" target="_blank">Chiel Eikelenboom</a>
+            </ul>
+
             <div class="h-10"></div>
+            <h4>Download/View project</h4>
+            <a href="https://github.com/Tom-H-Dev/Snowie-Snow" target="_blank" class="github-icon-class">
+                <img src="/img/github-mark.png">
+            </a> 
+            
             <h4>Share</h4>
             <ul class="social-ul">
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+                <li class="box-social"><a href="https://www.facebook.com/sharer/sharer.php?u=tom-h-dev.github.io/HotLead.html&quote=Check out this game called Hot Lead made by Tom Holewijn!%0A%0A" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                <li class="box-social"><a href="https://www.linkedin.com/sharing/share-offsite/?url=tom-h-dev.github.io/HotLead.html&title=Check out this game called Hot Lead made by Tom Holewijn!%3Cbr%3E" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                <li class="box-social"><a href="https://twitter.com/intent/tweet?url=tom-h-dev.github.io/HotLead.html&text=Check out this game called Hot Lead made by Tom Holewijn!%0A%0A" target="_blank"><i class="ion-social-twitter"></i></a></li>
             </ul>
         </div>
     </div>

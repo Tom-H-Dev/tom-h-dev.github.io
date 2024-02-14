@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tom Holewijn | Hot Lead</title>
+    <title>Tom Holewijn | D&D random stat generator</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -79,26 +79,26 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1>Hot Lead</h1>
-        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Hot Lead</p>
+        <h1>D&D random stat generator</h1>
+        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / D&D random stat generator</p>
     </div>
     <!-- end top-bar -->
     
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-12">
-            <video src="/videos/HotLead/Trailer(1) (1).mp4" autoplay muted class="img-responsive" ></video>
+            <video src="/videos/DnDGen/dndradomgenvid.mp4" autoplay muted loop class="img-responsive" ></video>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">Hot Lead</h3>
+            <h3 class="text-uppercase">D&D random stat generator</h3>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-9">
             <p>
-                You play as “Sargent Lead”, a special agent tasked to check out a factory that was taken over by a hostile AI. You have to clear the floors from hostile robots and find out what is happening in the factory. For this project we had to make a top down view twinstick shooter. As a group we could choose the look and feel of the game. We had the idea to make something in the style of a stealth shooter.
+                This small and simple generator is a stat and feat generator for a system in a friends d&d campaign. He asked me to make him a generator that could would generate random stats and feats for his random creature system. How does the system work? Simple, when you buy the item in the game you get a random creature out of a list of 100 creatures. When you have that you generate the stats and feats of the creature so it is to pure luck if the creature is good or not.
             </p>
 
             <!--<div class="sidebyside-image-container">
@@ -111,24 +111,24 @@
             </div>-->
 
             <p><br>
-                The game was the final project of the first year of the study at Grafisch Lyceum Utrecht. We had to make a twinstick top down shooter in 6 weeks time. We had the idea that the main character had to find out why the ai that owns the company has gone rouge and try to fix it.
+                Next to that this is the first project I made in Python and had to learn a lot. It was a really nice opportunity to learn more about different systems. In this project I learnd some basics such as variables, lists, random generation and OS system functions. Next to that I have used the MbConstants pop-up for a simple pop-up and how to implement this with what I wanted to make.
             </p><br>
 
             <div class="img-container">
                 <div class="img-image">
-                    <img src="/img/HotLead/hotleadsnippet01.PNG" alt="img-Image">
+                    <img src="/img/dndGen/python001.png" alt="img-Image">
                 </div>
                 <div class="img-text">
-                    <p><br>The "FindVisableTargets()" function is in charge of the enemy system where the emey searches for any players in thier area. If the enemy found a player the player is the target when it is still in distance. When there is no player found the enemy will follow its path or walk back to its path when the player is longer in sight.</p>
+                    <p><br>First the for loop will generate a random amount of special features. When the forloop is completed you will enter the area where the MbConstants will take over and make a pop up menu. In this menu you will see some information of the different stats like health, armor, strenght, etc.</p>
                 </div>
             </div><br><br>
 
             <div class="img-container">
                 <div class="img-image">
-                    <img src="/img/HotLead/hotleadsnippet02.PNG" alt="img-Image">
+                    <img src="/img/dndGen/python002.png" alt="img-Image">
                 </div>
                 <div class="img-text">
-                    <p><br>This is a part of the cycle for the enemies to see if they are are following the waytpoints they got assigned or if they are attacking the player. When the player is set as the target the enemy will follow the player for a set distance from the player when the player is outside this area the enemy will walk back to the path.
+                    <p><br>The def "restart()" is basically a small function that restarts the entire code script to restart the generator when you want to generate a new outcome. then you have a class where the different states of the MbConstants library are stored so the code knows what states I have and add those with the buttons on the pop up.
                     </p>
                 </div>
             </div><br>
@@ -144,30 +144,9 @@
         
         <div class="col-md-3">
 
-            <!--<img src="/img/HotLead/hot_lead_2.png">-->
-            
-            <p><br> <b>My Contribution:</b></p>
-            <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Enemy vision.</li>
-                <li><i class="ion-ios-circle-filled"></i> Enemy behavior.</li>
-                <li><i class="ion-ios-circle-filled"></i> Shooting systems.</li>
-                <li><i class="ion-ios-circle-filled"></i> Gameplay manager.</li>
-                <li><i class="ion-ios-circle-filled"></i> Cheat manager.</li>
-            </ul>
-
-            <p> <b>My Teammates:</b></p>
-            <ul class="cat-ul">
-                <p><b>Developers:</b></p>
-                <li><i class="ion-ios-circle-filled"></i> Loek Ota</li>
-                <p><b>Artist:</b></p>
-                <li><i class="ion-ios-circle-filled"></i> Henrico Kralt</li>
-                <li><i class="ion-ios-circle-filled"></i> Thijmen Zwanenveld</li>
-                <li><i class="ion-ios-circle-filled"></i> Lisa Rengelo</li>
-            </ul>
-
             <div class="h-10"></div>
             <h4>Download/View project</h4>
-            <a href="https://github.com/Tom-H-Dev/Hot-Lead" target="_blank" class="github-icon-class">
+            <a href="https://github.com/Tom-H-Dev/100randomgen" target="_blank" class="github-icon-class">
                 <img src="/img/github-mark.png">
             </a> 
             
